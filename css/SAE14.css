@@ -1,0 +1,67 @@
+body{
+	font-family :andika;
+	background-color:#B0E0E6;
+}
+
+header{
+	grid-area: hd;
+	text-align:center;
+	color :#B0E0E6;
+	border :solid;
+	background-color:grey;
+}
+
+section{
+	color : black;
+	grid-area: sec;
+	font-size:20pt;
+	padding-top:15pt;
+	padding-right: 8 pt;
+	text-align: justify;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+img{
+	margin-left: 75px;
+	margin-right: 75px;
+	margin-top : 50px;
+}
+.sport{
+	margin-left: 75px;
+	margin-right: 75px;
+	margin-top : 50px;
+	width: 350px;
+}
+
+nav{
+	grid-area: na;
+	color : black;
+	line-height:90px;
+	background-color:#E6E6FA;
+	border:solid;
+	border-color: Black;
+	border-radius : 14pt;
+	text-align : center;
+	font-size:15pt;
+}
+
+footer{
+	grid-area: ft;
+	text-align:left;
+	min-height:100%;
+	margin-top: 100px;
+}
+
+.wrapper{
+ display: grid;
+ grid-template-columns: 1fr 2fr 2fr;
+ grid-auto-rows: minmax(50px, auto); 
+ grid-column-gap: 10px;
+ grid-row-gap: 10px;
+ grid-template-areas: 
+	"hd hd hd"
+	"na sec sec"
+	"na sec sec"
+	"na sec sec"
+	"ft ft ft"; 
+}
